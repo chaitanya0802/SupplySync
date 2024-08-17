@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6F4EFB</color>
+    <color name="colorPrimaryDark">#333333</color>
+    <color name="colorAccent">#8C00FB</color>
+
+    <color name="windowBackground">#FFFFFF</color>
+
+    <color name="textPrimary">#212121</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="violet">#8C00FB</color>
+    <color name="light_violet">#A645F2</color>
+    <color name="bottom_navbar_ripple">#E79773F4</color>
+    <color name="red">#E53935</color>
+    <color name="green">#43A047</color>
+    <color name="blue">#5769DB</color>
+    <color name="start_color">#6C32FD</color>
+    <color name="end_color">#25E9F4</color>
+
+    <color name="search_bar_color">#E0E4E5</color>
+    <color name="search_bar_color_border">#E3EAEB</color>
+
+    <!-- fragment_login -->
+    <color name="hint_text_color">#000000</color>
+    <color name="box_background_color">#FFFFFF</color>
+</resources>

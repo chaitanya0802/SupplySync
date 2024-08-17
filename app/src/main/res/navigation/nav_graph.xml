@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.supplysync.android.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <argument
+            android:name="selectedRole"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.supplysync.android.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.supplysync.android.ui.signUp.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/predictFragment"
+        android:name="com.supplysync.android.ui.predict.PredictFragment"
+        android:label="Prediction"
+        tools:layout="@layout/fragment_predict" />
+    <fragment
+        android:id="@+id/orderCallFragment"
+        android:name="com.supplysync.android.ui.orderCall.OrderCallFragment"
+        android:label="Order Call"
+        tools:layout="@layout/fragment_order_call" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.supplysync.android.ui.contact.ContactFragment"
+        android:label="Contacts"
+        tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/racksAdderFragment2"
+        android:name="com.supplysync.android.ui.racksadder.RacksAdderFragment"
+        android:label="Rack Adder"
+        tools:layout="@layout/fragment_racks_adder" />
+    <fragment
+        android:id="@+id/sectionAdderFragment"
+        android:name="com.supplysync.android.ui.sectionadder.SectionAdderFragment"
+        android:label="Section Adder"
+        tools:layout="@layout/fragment_section_adder" />
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.supplysync.android.ui.profile.profileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" >
+
+        <action
+            android:id="@+id/action_userProfileFragment_to_racksAdderFragment2"
+            app:destination="@id/racksAdderFragment2" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_sectionAdderFragment"
+            app:destination="@id/sectionAdderFragment" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_rackUpdaterFragment"
+            app:destination="@id/rackUpdaterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rackUpdaterFragment"
+        android:name="com.supplysync.android.ui.rackupdater.RackUpdaterFragment"
+        android:label="Rack Update"
+        tools:layout="@layout/fragment_rack_updater" />
+    <fragment
+        android:id="@+id/predictLPFragment"
+        android:name="com.supplysync.android.ui.predictlp.PredictLPFragment"
+        android:label="fragment_predict_lp"
+        tools:layout="@layout/fragment_predict_lp" />
+</navigation>
