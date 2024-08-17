@@ -1,6 +1,6 @@
 <h1> Android App for -> Optimized Supply Chain Management  With Machine Learning </h1>
 <a href="https://github.com/chaitanya0802/SupplySyncBackend">Click me for Backend and ML for this app</a> 
-<h3><b>Home</b> - For dashboard of inventory in form of Visualization</h3>
+<h3>Home - For dashboard of inventory in form of Visualization</h3>
 <h3>Predict - For predictiong the sales of product in soecific date</h3>
 <h3>Order Call - to get order calls form clients</h3>
 <h3>Profile - For User profile and creating warehouse structure</h3>
