@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SupplySync" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+    </style>
+
+    <style name="Theme.SupplySync" parent="Base.Theme.SupplySync" >
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowEnterTransition">@android:transition/slide_right</item>
+        <item name="android:windowExitTransition">@android:transition/slide_left</item>
+    </style>
+
+    <style name="custom_text_input_layout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="android:textColorHint">@color/violet</item>
+        <item name="boxBackgroundColor">@color/box_background_color</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxCornerRadiusBottomEnd">15dp</item>
+        <item name="boxCornerRadiusBottomStart">15dp</item>
+        <item name="boxCornerRadiusTopEnd">15dp</item>
+        <item name="boxCornerRadiusTopStart">15dp</item>
+        <item name="boxStrokeColor">@color/violet</item>
+        <item name="hintTextColor">@color/hint_text_color</item>
+    </style>
+
+    <style name="custom_text_input_edit_text" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

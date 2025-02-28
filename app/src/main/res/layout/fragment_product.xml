@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.product.Product">
+
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Manage Product Lots"
+        android:textColor="@color/textPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/rackIdTextField"
+        style="@style/custom_text_input_layout"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:hint="Rack Id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerTextView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/rackIdEditText"
+            style="@style/custom_text_input_edit_text"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/productNameTextField"
+        style="@style/custom_text_input_layout"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="14dp"
+        android:hint="Product Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rackIdTextField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/productNameEditText"
+            style="@style/custom_text_input_edit_text"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/supplierNameTextField"
+        style="@style/custom_text_input_layout"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="14dp"
+        android:hint="Supplier Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/productNameTextField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/supplierNameEditText"
+            style="@style/custom_text_input_edit_text"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/quantityTextField"
+        style="@style/custom_text_input_layout"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="14dp"
+        android:hint="Quantity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/supplierNameTextField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/quantityEditText"
+            style="@style/custom_text_input_edit_text"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/categoryTextField"
+        style="@style/custom_text_input_layout"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="14dp"
+        android:hint="Category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quantityTextField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/categoryEditText"
+            style="@style/custom_text_input_edit_text"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/priceTextField"
+        style="@style/custom_text_input_layout"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="14dp"
+        android:hint="Lot Price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/categoryTextField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/priceEditText"
+            style="@style/custom_text_input_edit_text"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lotSpaceTextField"
+        style="@style/custom_text_input_layout"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="14dp"
+        android:hint="Lot Space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/priceTextField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lotSpaceEditText"
+            style="@style/custom_text_input_edit_text"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/addProductButton"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/violet"
+        android:text="Add Product Lot"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lotSpaceTextField" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
