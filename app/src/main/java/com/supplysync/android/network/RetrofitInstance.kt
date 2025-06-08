@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 //to create singleton instance of api service
 object RetrofitInstance {
-    private const val BASE_URL = "http://192.168.114.91:8000/app/"
+    private const val BASE_URL = "http://192.168.29.91:8000/app/"
 
     private fun getClient(context: Context): OkHttpClient {
         val loggingInterceptor = HttpLoggingInterceptor().apply {
