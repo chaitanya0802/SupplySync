@@ -8,13 +8,49 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
+                  <entry key="deleteProductLotFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="624" />
+                            <option name="y" value="844" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="deleteRackFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="970" />
+                            <option name="y" value="872" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="deleteSectionFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="1345" />
+                            <option name="y" value="688" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="homeFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="16" />
-                            <option name="y" value="127" />
+                            <option name="x" value="-44" />
+                            <option name="y" value="243" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -25,8 +61,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-75" />
-                            <option name="y" value="-251" />
+                            <option name="x" value="-23" />
+                            <option name="y" value="-403" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -46,6 +82,11 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_loginFragment_to_userProfileFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                           </map>
                         </option>
                       </LayoutPositions>
@@ -56,8 +97,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="288" />
-                            <option name="y" value="131" />
+                            <option name="x" value="258" />
+                            <option name="y" value="243" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -68,8 +109,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="756" />
-                            <option name="y" value="362" />
+                            <option name="x" value="1422" />
+                            <option name="y" value="217" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -80,8 +121,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="1013" />
-                            <option name="y" value="35" />
+                            <option name="x" value="1161" />
+                            <option name="y" value="-169" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -146,12 +187,27 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="511" />
-                            <option name="y" value="125" />
+                            <option name="x" value="599" />
+                            <option name="y" value="221" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_userProfileFragment_to_deleteProductLotFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_userProfileFragment_to_deleteRackFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_userProfileFragment_to_deleteSectionFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_userProfileFragment_to_product">
                               <value>
                                 <LayoutPositions />

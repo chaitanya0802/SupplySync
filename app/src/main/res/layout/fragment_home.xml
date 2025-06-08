@@ -216,13 +216,25 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/section_cv" />
 
+        <TextView
+            android:id="@+id/itv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sections filled in sq.ft"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/section_pc"/>
+
         <com.github.mikephil.charting.charts.BarChart
             android:id="@+id/sectionBarChart"
             android:layout_width="match_parent"
             android:layout_height="300dp"
+            android:layout_marginTop="8sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/section_pc" />
+            app:layout_constraintTop_toBottomOf="@id/itv" />
 
 
 

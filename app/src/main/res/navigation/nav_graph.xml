@@ -71,6 +71,15 @@
         <action
             android:id="@+id/action_userProfileFragment_to_product"
             app:destination="@id/product" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_deleteSectionFragment"
+            app:destination="@id/deleteSectionFragment" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_deleteRackFragment"
+            app:destination="@id/deleteRackFragment" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_deleteProductLotFragment"
+            app:destination="@id/deleteProductLotFragment" />
     </fragment>
     <fragment
         android:id="@+id/product"
@@ -86,4 +95,19 @@
             android:id="@+id/action_subordinateSignUpFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/deleteSectionFragment"
+        android:name="com.supplysync.android.ui.deletesection.DeleteSectionFragment"
+        android:label="Delete Section"
+        tools:layout="@layout/fragment_delete_section" />
+    <fragment
+        android:id="@+id/deleteRackFragment"
+        android:name="com.supplysync.android.ui.deleterack.DeleteRackFragment"
+        android:label="Delete Rack"
+        tools:layout="@layout/fragment_delete_rack" />
+    <fragment
+        android:id="@+id/deleteProductLotFragment"
+        android:name="com.supplysync.android.ui.deleteproductlot.DeleteProductLotFragment"
+        android:label="Delete Product Lot"
+        tools:layout="@layout/fragment_delete_product_lot" />
 </navigation>

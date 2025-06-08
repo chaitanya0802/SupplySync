@@ -18,6 +18,7 @@ import com.supplysync.android.ui.subordinatesignup.SubordinateSignUpRequest
 import com.supplysync.android.ui.subordinatesignup.SubordinateSignUpResponse
 import retrofit2.Response
 import retrofit2.http.Body
+import retrofit2.http.DELETE
 import retrofit2.http.GET
 import retrofit2.http.Headers
 import retrofit2.http.PATCH
@@ -76,4 +77,24 @@ interface ApiService {
     @GET("get-filledsize-sectionid")
     suspend fun getfilledsizesectionid(@Query("warehouse_id") warehouse_id: String): Response<List<FilledsizeSectionidResponse>>
 
+    //delete
+
+    @GET("sections")
+    suspend fun getSections(@Query("warehouse_id") warehouseId: String): List<String>
+
+    @DELETE("sections/{id}")
+    suspend fun deleteSection(@Path("id") id: String): Response<Unit>
+
+
+    @GET("racks")
+    suspend fun getRacks(@Query("warehouse_id") warehouseId: String): List<String>
+
+    @DELETE("racks/{rack_id}")
+    suspend fun deleteRack(@Path("rack_id") rackId: String): Response<Unit>
+
+    @GET("productlots")
+    suspend fun getProductLots(@Query("warehouse_id") warehouseId: String): List<String>
+
+    @DELETE("productlots/{product_lot_id}")
+    suspend fun deleteProductLot(@Path("product_lot_id") lotId: String): Response<Unit>
 }

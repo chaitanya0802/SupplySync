@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.supplysync.android.R
 import com.supplysync.android.databinding.FragmentProfileBinding
@@ -34,6 +35,19 @@ class profileFragment : Fragment() {
         }
         binding.addProduct.setOnClickListener {
             findNavController().navigate(R.id.action_userProfileFragment_to_product)
+        }
+
+        //delete
+        binding.deleteSectionButton.setOnClickListener {
+            findNavController().navigate(R.id.action_userProfileFragment_to_deleteSectionFragment)
+        }
+
+        binding.deleteRackButton.setOnClickListener {
+            findNavController().navigate(R.id.action_userProfileFragment_to_deleteRackFragment)
+        }
+
+        binding.deleteProduct.setOnClickListener {
+            findNavController().navigate(R.id.action_userProfileFragment_to_deleteProductLotFragment)
         }
     }
 

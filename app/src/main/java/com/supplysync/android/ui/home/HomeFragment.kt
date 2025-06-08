@@ -48,16 +48,25 @@ class HomeFragment : Fragment() {
             updateWarehouseChart(pf)
         }
 
+        // 2 boxes of total
+        homeViewModel.total_sections.observe(viewLifecycleOwner) { data ->
+            data.toString().also { binding.totalsections.text = it }
+        }
+        homeViewModel.total_racks.observe(viewLifecycleOwner) { data ->
+            data.toString().also { binding.totalracks.text = it }
+        }
+
 
         //section
         homeViewModel.getSectionData(warehouse_id)
         homeViewModel.total_empty_sections.observe(viewLifecycleOwner) { value ->
-            "Total Empty Sections: $value".also { binding.totalemptysectionsTv.text = it }
+            "100% Empty Sections: $value".also { binding.totalemptysectionsTv.text = it }
         }
 
         homeViewModel.total_filled_sections.observe(viewLifecycleOwner) { value ->
-            "Total Filled Sections: $value".also { binding.totalfilledsectionsTv.text = it }
+            "100% Filled Sections: $value".also { binding.totalfilledsectionsTv.text = it }
         }
+        //pie
         homeViewModel.percent_section_filled.observe(viewLifecycleOwner) { value ->
             updateSectionChart(value)
         }
@@ -65,14 +74,6 @@ class HomeFragment : Fragment() {
         //bar graph
         homeViewModel.sectionBarGraph.observe(viewLifecycleOwner) { data ->
             attachSectionBarGraphData(data)
-        }
-
-        //total
-        homeViewModel.total_sections.observe(viewLifecycleOwner) { data ->
-            data.toString().also { binding.totalsections.text = it }
-        }
-        homeViewModel.total_racks.observe(viewLifecycleOwner) { data ->
-            data.toString().also { binding.totalracks.text = it }
         }
 
 
@@ -111,8 +112,8 @@ class HomeFragment : Fragment() {
     private fun updateSectionChart(percentagefilled: Float) {
         val emptyPercentage = 100 - percentagefilled
         val entries = listOf(
-            PieEntry(percentagefilled, "Filled"),
-            PieEntry(emptyPercentage, "Empty")
+            PieEntry(percentagefilled, "100% Filled"),
+            PieEntry(emptyPercentage, "Partially filled")
         )
 
         // Configure the dataset

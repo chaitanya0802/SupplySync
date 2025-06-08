@@ -57,36 +57,38 @@
     <Button
         android:id="@+id/addSectionButton"
         style="@style/Widget.Material3.Button.TonalButton"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
+        android:layout_margin="16dp"
         android:layout_marginTop="25dp"
-        android:elevation="4dp"
         android:backgroundTint="@color/violet"
+        android:elevation="4dp"
+        android:padding="1dp"
         android:text="Add Section"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:padding="1dp"
         app:cornerRadius="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addRackButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text1"/>
+        app:layout_constraintTop_toBottomOf="@id/text1" />
 
     <Button
         android:id="@+id/addRackButton"
         style="@style/Widget.Material3.Button.TonalButton"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_marginTop="20dp"
-        android:elevation="4dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="25dp"
         android:backgroundTint="@color/violet"
+        android:elevation="4dp"
+        android:padding="1dp"
         android:text="Add Rack"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:padding="1dp"
         app:cornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/addSectionButton"/>
+        app:layout_constraintStart_toEndOf="@+id/addSectionButton"
+        app:layout_constraintTop_toBottomOf="@id/text1" />
 
     <Button
         android:id="@+id/addProduct"
@@ -104,4 +106,73 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addRackButton" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="20dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/addProduct"
+        tools:layout_editor_absoluteX="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <!--    delete-->
+
+    <Button
+        android:id="@+id/deleteSectionButton"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#FF474C"
+        android:elevation="4dp"
+        android:padding="1dp"
+        android:text="Delete Section"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/deleteRackButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <Button
+        android:id="@+id/deleteRackButton"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#FF474C"
+        android:elevation="4dp"
+        android:padding="1dp"
+        android:text="Delete Rack"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/deleteSectionButton"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <Button
+        android:id="@+id/deleteProduct"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF474C"
+        android:elevation="4dp"
+        android:padding="1dp"
+        android:text="Delete product Lot"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteRackButton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
